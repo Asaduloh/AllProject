@@ -1,12 +1,11 @@
 package shop;
 
-import java.util.Map;
 
 public class Product {
     private  Integer id;
     private  String name;
     private Integer price;
-    private Integer count;
+    private final Integer count;
 
     public Product(Integer id, String name, Integer price, Integer count) {
         this.id = id;
@@ -14,12 +13,6 @@ public class Product {
         this.price = price;
         this.count = count;
     }
-
-    public Product(Integer id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-
     public Product(Integer id, Integer count) {
         this.id = id;
         this.count = count;
@@ -49,11 +42,9 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "id=" + id +
+        return  "id=" + id +
                 ", name='" + name + '\'' +
                 ", price=" + price +
-                ", count=" + count +
-                '}';
+                ", count=" + count ;
     }
 }

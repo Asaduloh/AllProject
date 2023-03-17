@@ -1,3 +1,4 @@
+/*
 import java.sql.*;
 // RDBC objecta nisvbatan pars qilish
 //enum
@@ -21,3 +22,4 @@ public class DBConnect {
     }
 }
 
+*/
